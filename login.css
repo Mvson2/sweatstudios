@@ -1,0 +1,310 @@
+body {
+  margin: 0 auto;
+  background: -webkit-linear-gradient(#003366, lightblue);
+  height: 100vh;
+}
+
+h2 {
+  padding-top: 3rem;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem;
+  line-height: 2.50rem;
+
+}
+
+#footer-box {
+  height: 3rem;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+}
+
+#login {
+    box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  border: none;
+  margin-top: 0.25rem;
+  height: 4rem;
+  width: 16rem;
+  border-radius: 3rem;
+  background-color: #003366;
+  font-size: 1.25rem;
+  color: white;
+  margin: 1rem 1rem 1rem 1rem;
+
+}
+
+#button-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-container {
+    box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0 auto;
+  display: block;
+}
+
+.header {
+  color: black;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-body {
+  width: 80%;
+  background-color: white;
+  border-radius: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+      box-shadow: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  background: transparent;
+  position: relative;
+  font-weight: thin;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 auto;
+  display: block;
+  height: 3rem;
+  width: 18rem;
+  border-radius: 3rem;
+  border: black solid 0.2rem;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  outline: none;
+
+}
+
+
+
+#u {
+  background-size: contain;
+  display: inline-block;
+  color: white;
+  -webkit-background-clip: text;
+  width: 2rem;
+  background: -webkit-linear-gradient(#003366, lightblue);
+  border-radius: 1rem;
+}
+
+#hide {
+  left: 14rem;
+  right: 0;
+  z-index: 2;
+  border: none;
+  position: absolute;
+  top: 0.75rem;
+  color: grey;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#password {
+  margin: 0 auto;
+  position: relative;
+  width: 20rem;
+}
+
+@media (max-width:500px) and (orientation: portrait) {
+  .main-body {
+    width: 80%;
+    background-color: white;
+    border-radius: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .input {
+    background: transparent;
+    position: relative;
+    font-weight: thin;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    display: block;
+    height: 3rem;
+    width: 15em;
+    border-radius: 3rem;
+    border: black solid 0.2rem;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    outline: none;
+
+  }
+
+  #hide {
+    left: 9rem;
+    right: 0;
+    z-index: 2;
+    border: none;
+    position: absolute;
+    top: 0.85rem;
+    color: grey;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  #login {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    margin-top: 0.25rem;
+    height: 4rem;
+    width: 10rem;
+    border-radius: 3rem;
+    background-color: #003366;
+    font-size: 1.25rem;
+    color: white;
+    margin: 1rem 1rem 1rem 1rem;
+
+  }
+
+  #password {
+    margin: 0 auto;
+    position: relative;
+    width: 15rem;
+  }
+
+  #button-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width:500px) and (orientation: landscape) {
+  .main-body {
+    background-color: white;
+    border-radius: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width:1000px) {
+  #signup {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    margin-top: 0rem;
+    height: 4rem;
+    width: 20rem;
+    border-radius: 3rem;
+    background-color: #003366;
+    font-size: 1.25rem;
+    color: white;
+
+  }
+
+  .main-body {
+    width: 60%;
+    background-color: white;
+    border-radius: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  #password,
+  #confirm {
+    margin: 0 auto;
+    position: relative;
+    width: 20rem;
+  }
+
+  #hide {
+    left: 16rem;
+    right: 0;
+    z-index: 2;
+    border: none;
+    position: absolute;
+    top: 0.95rem;
+    color: grey;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .input {
+    background: transparent;
+    position: relative;
+    font-weight: thin;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    display: block;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 3rem;
+    border: black solid 0.2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    outline: none;
+
+  }
+
+  .name {
+
+    background: transparent;
+    font-weight: thin;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 3rem;
+    border: black solid 0.2rem;
+    font-size: 1rem;
+  }
+
+  #name {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 20rem;
+  }
+}
+
+h2 {
+  padding-top: 3rem;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem;
+  line-height: 2.50rem;
+  font-size: 2rem;
+
+}
+}
