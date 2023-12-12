@@ -1,8 +1,8 @@
 body {
-  background-color: lightgrey;
-  margin: 0;
-  font-family: 'Helvetica', 'Arial', sans-serif;
-
+  background: -webkit-linear-gradient(#003366, lightblue);
+  margin: 0 auto;
+  font-family: 'Comfortaa', cursive;
+  height: 100vh;
 }
 
 a {
@@ -11,6 +11,10 @@ a {
 
 h1 {
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
   font-weight: bold;
 }
 
@@ -23,19 +27,32 @@ h5 {
   font-size: 15px;
   font-weight: normal;
 }
+#you {
+  background: #003366;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#perfect {
+
+  background: lightblue;
+  background-size: contain;
+  display: inline-block;
+  text-align:center;
+}
 
 .primaryheader {
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: left;
   align-items: center;
   box-sizing: border-box;
+  filter: drop-shadow(0 0 5px black);
 }
 
 .secondaryheader,
 .secondaryheader p {
-  background-color: grey;
-  text-decoration: underline;
+  background-color: white;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -44,8 +61,26 @@ h5 {
 
 .logo,
 .logo h1 {
-  color: white;
+  color: black;
   text-decoration: none;
+}
+
+.icon {
+  color: black;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  font-size: 27px;
+}
+
+.u {
+  background-size: contain;
+  display: inline-block;
+  color: white;
+  -webkit-background-clip: text;
+  width: 27px;
+  background: -webkit-linear-gradient(#003366, lightblue);
+  border-radius: 17px;
+  text-align: center;
 }
 
 .nav {
@@ -57,7 +92,7 @@ h5 {
   display: inline-block;
   padding: 20px 25px;
   text-decoration: none;
-  color: white;
+  color: black;
   list-style: none;
 }
 
@@ -76,13 +111,26 @@ h5 {
 
 @media screen and (max-width:600px) {
 
+#you {
+  background: #003366;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#perfect {
+
+  background: lightblue;
+  background-size: contain;
+  display: inline-block;
+  text-align:center;
+}
   .navmb {
     display: right;
     height: 30%;
     position: absolute;
     overflow: hidden;
     width: 100%;
-    background-color: black;
+    background-color: white;
     transition: 0.35s;
   }
 
@@ -101,7 +149,7 @@ h5 {
     cursor: pointer;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    color: white;
+    color: black;
     list-style: none;
   }
 
@@ -114,8 +162,8 @@ h5 {
     height: 70px;
     padding-left: 20px;
     padding-right: 10px;
-      display: flex;
-  margin: auto;
+    display: flex;
+    margin: auto;
   }
 
   .secondaryheader {
@@ -123,43 +171,63 @@ h5 {
     height: 40px;
 
   }
+.secondaryheader,
+.secondaryheader p {
+  background-color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:13px;
+}
+  .icon {
+    color: black;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    font-size: 27px;
+  }
+
+  .u {
+    background-size: contain;
+    display: inline-block;
+    color: white;
+    -webkit-background-clip: text;
+    width: 30px;
+    background: -webkit-linear-gradient(#003366, lightblue);
+    border-radius: 17px;
+    text-align: center;
+  }
 
   .button {
     display: block;
     align-items: center;
-    margin: ;
     background: none;
     border: none;
   }
 
   .pheader-right {
-  width: 50%;
-  display: flex;
-  justify-content: right;
+    width: 30%;
+    display: flex;
+    justify-content: right;
   }
-  
-    .pheader-left {
-      width: 50%;
-  display: flex;
-  justify-content: left;
+
+  .pheader-left {
+    width: 70%;
+    display: flex;
+    justify-content: left;
   }
 
   .bar {
-    border-radius: 10px;
-    width: 50px;
-    height: 5px;
-    background-color: white;
+    border-radius: 20px;
+    width: 40px;
+    height: 3px;
+    background-color: black;
     justify-content: space-between;
     margin: 5px;
   }
 }
 
 @media screen and (min-width:600px) {
-  body {
-    width: 100%;
-    height: 100%;
-
-  }
 
   .primaryheader {
     width: 100%;
@@ -173,4 +241,33 @@ h5 {
     height: 45px;
 
   }
+}
+
+@media screen and (max-width:300px) {
+
+
+.Career4 {
+display:none;
+}
+
+.u {
+  background-size: contain;
+  display: inline-block;
+  color: white;
+  -webkit-background-clip: text;
+  width: 30px;
+  background: -webkit-linear-gradient(#003366, lightblue);
+  border-radius: 17px;
+  text-align: center;
+}
+
+.secondaryheader,
+.secondaryheader p {
+  background-color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:10px;
+}
 }
