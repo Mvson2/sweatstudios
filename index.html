@@ -5,59 +5,383 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <title>Career4U</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
 </head>
-<body>
-    <nav class="nav">
-        <div class="nav-icon-container">
-            <img class="nav-icon" src="Untitled.svg">
-        </div>
-            
-        <div class="nav-search-container">
-            <input placeholder="Search" type="text" class="nav-search">
-        </div>
-        <div class="nav-button-container">
-            <button class="nav-button">Job Search</button>
-            <button class="nav-button">Our Sponsors</button>
-            <button class="nav-button">About Us</button>
-        </div>
-    </nav>
-<header>
-<hr>
-<section class="header">
-    <div class="header-container">
-        <div class="header-left">
-            <h1>Find the perfect job.<br>No matter where you are.</h1>
-        </div>
-        <div class="header-right"> 
-            <button class="header-button">Start your search</button>
-        </div>
-    </div>
-    <hr>
-</section>
-</header>
+<style>
+    @font-face {
+    font-family: 'Rozanova-GEO-Demo-Semi-Bold';
+    src:url('Rozanova-GEO-Demo-Semi-Bold.ttf.woff') format('woff'),
+        url('Rozanova-GEO-Demo-Semi-Bold.ttf.svg#Rozanova-GEO-Demo-Semi-Bold') format('svg'),
+        url('Rozanova-GEO-Demo-Semi-Bold.ttf.eot'),
+        url('Rozanova-GEO-Demo-Semi-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
-<main>
-<article>
-    <h2>
-        Introducing a new way to look for a career you'll love.
-    </h2>
-    <div class="paragraphs-container">
-        <p class="paragraphs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ab commodi possimus quidem repudiandae. Officiis esse vero alias est, iste ad, corrupti maxime veniam officia, amet dolorem ipsa aperiam dolores.</p>
-        <p class="paragraphs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit est eligendi sed repellat optio! Autem, minus quisquam, rem repellat blanditiis fugit dicta minima quia necessitatibus quidem velit reprehenderit cumque soluta?</p>
-        <p class="paragraphs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dignissimos facere ad at, dolore eaque voluptatibus est sapiente magni corporis voluptate adipisci odit magnam dolorum eveniet illo hic deserunt? Animi!</p>
+    body{
+        width:100%;
+        overflow-x: hidden;
+        margin: 0;
+        font-family: "DM Sans";
+    }
+      
+      .footer-desktop{
+        width:100%;
+        height:300px;
+        background-color: black;
+        display: flex;
+      }
+      .footer-left{
+        color:white;
+        width:50%;
+        background-color: black;
+        display:block;
+        text-align: center;
+        margin:20px;
+      }
+      .footer-right{
+        color:white;
+        width:50%;
+        background-color: black;
+        display: flex;
+      }
+      .footer-right-left{
+        color:white;
+        width:50%;
+        background-color: black;
+      }
+      .footer-right-right{
+        color:white;
+        width:50%;
+        background-color: black;
+      }
+      .footer-logo{
+        height:75px;
+
+      }
+      .nav-left{
+        width: 20%;
+        margin-left:20px;
+        padding-top:20px;
+    }
+    .nav-right{
+        width: 20%;
+        margin-right:20px;
+        padding-top:20px;
+    }
+    .nav-gap{
+        width: 60%;
+    }
+    .nav-logo{
+        float: left;
+        height:60px;
+    }
+    .nav-btn-icon{
+        height:60px;
+    }
+    .nav-btn{
+        float: right;
+        height:60px;
+        background-color: white;
+        border: 0;
+    }
+    .main-image-container{
+        position: relative;
+        text-align: center;
+    }
+    .main-image{
+        width:100%;
+    }
+    .main-image-logo{
+        height:60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-image-container {
+         position: relative;
+         display: inline-block;
+      }
+      .main-image-container img {
+         display: block;
+      }
+      .main-image-container .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+      }
+      .sec-one{
+        width:100%;
+        height:70px;
+        font-size:15px;
+      }
+      p{
+        margin:15px;
+        text-align: center;
+      }
+      .sec-two{
+        width:100%;
+        text-align: justify;
+      }
+      .sec-btn-two{
+        margin:20px;
+        background-color: black;
+        border-radius: 10px;
+        height:50px;
+        width:150px;
+        border: 0;
+        color:white;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+        font-size:20px;
+      }
+      .sec-three{
+        width:100%;
+        text-align: center;
+      }
+      .three-div-one{
+
+      }
+      .profile-img{
+        width:80%;
+        border-radius:20px;
+      }
+      @media only screen and (max-width: 800px) {
+        nav{
+        width:100%;
+        height:fit-content;
+        display:flex;
+        padding-bottom:20px;
+    }
+    .nav-left{
+        width: 20%;
+        margin-left:20px;
+        padding-top:20px;
+    }
+    .nav-right{
+        width: 20%;
+        margin-right:20px;
+        padding-top:20px;
+    }
+    .nav-gap{
+        width: 60%;
+    }
+    .nav-logo{
+        float: left;
+        height:60px;
+    }
+    .nav-btn-icon{
+        height:60px;
+    }
+    .nav-btn{
+        float: right;
+        height:60px;
+        background-color: white;
+        border: 0;
+    }
+    .main-image-container{
+        position: relative;
+        text-align: center;
+    }
+    .main-image{
+        width:100%;
+    }
+    .main-image-logo{
+        height:60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-image-container {
+         position: relative;
+         display: inline-block;
+      }
+      .main-image-container img {
+         display: block;
+      }
+      .main-image-container .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+      }
+      .sec-one{
+        width:100%;
+        height:125px;
+        font-size:15px;
+      }
+      p{
+        margin:15px;
+        text-align: center;
+        font-family:"DM Sans";
+        line-height: 25px;
+      }
+      .sec-two{
+        width:100%;
+        text-align: center;
+      }
+      .sec-btn-two{
+        margin:15px;
+        background-color: black;
+        border-radius: 10px;
+        height:50px;
+        width:150px;
+        border: 0;
+        color:white;
+        font-size:20px;
+      }
+      .sec-three{
+        width:100%;
+        text-align: center;
+      }
+      .three-div-one{
+
+      }
+      .profile-img{
+        width:80%;
+        border-radius:20px;
+      }
+
+      .footer-mobile{
+        width:100%;
+        height:350px;
+        background-color: black;
+        display: block;
+        margin-top:20px;
+      }
+      .footer-top{
+        text-align: center;
+        width:100%;
+        height:50%;
+        position: relative;
+      }
+      .footer-bottom{
+        width:100%;
+        height:50%;
+      }
+      .footer-text{
+        color:white;
+        font-family: "DM Sans";
+      }
+      .footer-desktop{
+        display:none;  
+      }
+      .footer-top .footer-logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .footer-logo{
+        height:100px;
+      }
+      .signup-email{
+        text-align: center;
+        border-radius: 10px;
+        margin:20px;
+        width:60%;
+        border: 5px solid black; 
+        height:45px;
+        font-size:20px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
+      .signup-btn{
+        margin:20px;
+        background-color: black;
+        border-radius: 10px;
+        height:50px;
+        width:100px;
+        border: 0;
+        color:white;
+        font-size:20px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
+      hr{
+        margin: 0;
+        height:5px;
+        background-color: black;
+        padding: 0;
+      }
+    }
+</style>
+<body>
+<nav>
+        <div class="nav-left">
+            <img class="nav-logo" src="Black logo cropped - no background.png">
+        </div>
+        <div class="nav-gap"></div>
+        <div class="nav-right">
+            <button class="nav-btn" type="submit">
+                <img class="nav-btn-icon" src="navigation.png" alt="buttonpng"/>
+            </button>
+        </div>
+</nav>
+
+<article class="main-container">
+    <div class="main-image-container">
+        <img class="main-image" src="cf6673f3fc36447fd1975c3b888b9bfd.jpg">
+        <div class="overlay"></div>
+        <image class="main-image-logo" src="White logo text - no background.png"></image>
     </div>
-    <hr>
 </article>
 
-</main>
-<footer>
-    <hr>
-    <p class="footer-text">
-    Made by Mason Jantzi with ♡
-    </p>
+<section class="sec-one">
+    <div class="sec-div-one">
+    <p>Sweat Studio is a boutique hot yoga & spin studio. Offering a variety of classes tailored to all levels of individuals
+        with the overall goal of optimum health & wellness.
+</section>
+<section class="sec-two">
+    <div>
+        <button class="sec-btn-two">
+        Book Now        
+        </button>
+    </div>
+</section>
+<section class="sec-three">
+    <div class="three-div-one">
+        <h1>Sign up for our Newsletter!</h1>
+        <input class="signup-email" type="email" placeholder="Email Address"><br>
+
+        <input class="signup-btn" type="submit" value="Sign Up">
+    </div>
+</section>
+
+<footer class="footer-desktop">
+<div class="footer-left">
+    <img class="footer-logo" src="White logo - no background.png">
+    <p class="footer-text">162 Main Street<br>
+    Sundridge, ON P0A1Z0<br>
+    (705)498-8268</p>
+    </div>
+<div class="footer-right">
+    <div class="footer-right-left">
+
+    </div>
+    <div class="footer-right-right">
+
+    </div>
+</div>
+
 </footer>
+<footer class="footer-mobile">
+    <div class="footer-top">
+        <img class="footer-logo" src="White logo - no background.png">
+    </div>
+    <div class="footer-bottom">
+            <p class="footer-text">162 Main Street<br>
+                Sundridge, ON P0A1Z0<br><br>
+                <i class="fa fa-phone"></i> (705)498-8268</p>
+    </div>
+    </footer>
 </body>
 </html>
