@@ -18,9 +18,9 @@
   </button>
   </div>
   <div class="menu-bottom">
-  <a><h1>About Us</h1></a><br>
-  <a><h1>Booking</h1></a><br>
-  <a><h1>Contact</h1></a><br>
+  <a href="about.html" class="nav-item"><h1>About Us</h1></a><br>
+  <a class="nav-item"><h1>Booking</h1></a><br>
+  <a class="nav-item"><h1>Contact</h1></a><br>
 </div>
 </div>
 <div>
@@ -30,7 +30,7 @@
         </div>
         <div class="nav-gap"></div>
         <div class="nav-right">
-            <button class="nav-btn" type="submit" onclick="showMenu()">
+            <button class="nav-btn" type="submit" onclick="showMenu(this)">
                 <img class="nav-btn-icon" src="navigation.png" alt="buttonpng"/>
             </button>
         </div>
@@ -47,8 +47,8 @@
 <section class="sec-one">
     <div class="sec-div-one">
       <h1>Welcome!</h1>
-    <p class="main-text">Sweat Studio is a boutique hot yoga & spin studio. Offering a variety of classes tailored to all levels of individuals
-        with the overall goal of optimum health & wellness.
+    <p class="sec-text-one">Sweat Studio is a boutique hot yoga & spin studio. Offering a variety of classes tailored to all levels of individuals
+        with the overall goal of optimum health & wellness. </p>
 </section>
 
 <section class="sec-two">
@@ -91,19 +91,12 @@
     <div class="footer-bottom">
             <p class="footer-text">162 Main Street<br>
                 Sundridge, ON P0A1Z0<br><br>
-                <i class="fa fa-phone"></i> (705)498-8268</p>
+                <i class="fa fa-phone"></i><a href="tel:6031112298" class="phone"> (705) 984-3474</a></p>
     </div>
     </footer>
   </div>
 </body>
-<script>
-  function showMenu(){
-  var x = document.getElementById("dropdown");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-  }
+<script src="script.js">
+
 </script>
 </html>
