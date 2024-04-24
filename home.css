@@ -209,7 +209,7 @@
         justify-content: center;
         align-items: center;
       }
-      .main-text{
+      .sec-text-one{
         width:300px;
         text-align: justify;
         text-align-last: center;
@@ -258,9 +258,10 @@
       }
       .footer-bottom{
         width:100%;
-        height:60%;
+        height:40%;
         text-align: center;
         position: relative;
+    
       }
       .footer-text{
         color:white;
@@ -320,6 +321,7 @@
         padding-top:50px;
         width:50%;
         margin: auto;
+    
       }
       .menu-btn{
         float: right;
@@ -329,5 +331,33 @@
       }
       .menu-btn-icon{
         height:40px;
+      }
+      .main-text{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        font-size:40px;
+      }
+      .sec-three{
+        width:100%;
+        text-align: center;
+      }
+      .profile-img{
+        width:80%;
+        border-radius:20px;
+      }
+      .sec-text-three{
+        margin:40px;
+      }
+      a{
+        text-decoration: none;
+      }
+      :visited{
+        color:black;
+      }
+      .phone{
+        color:white;
       }
     }
