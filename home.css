@@ -1,0 +1,333 @@
+    @font-face {
+    font-family: 'Rozanova-GEO-Demo-Semi-Bold';
+    src:url('Rozanova-GEO-Demo-Semi-Bold.ttf.woff') format('woff'),
+        url('Rozanova-GEO-Demo-Semi-Bold.ttf.svg#Rozanova-GEO-Demo-Semi-Bold') format('svg'),
+        url('Rozanova-GEO-Demo-Semi-Bold.ttf.eot'),
+        url('Rozanova-GEO-Demo-Semi-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+    }
+    body{
+        width:100%;
+        overflow-x: hidden;
+        margin: 0;
+        font-family: "DM Sans";
+        z-index: 1;
+    }
+      
+      .footer-desktop{
+        width:100%;
+        height:300px;
+        background-color: black;
+        display: flex;
+      }
+      .footer-left{
+        color:white;
+        width:50%;
+        background-color: black;
+        display:block;
+        text-align: center;
+        margin:20px;
+      }
+      .footer-right{
+        color:white;
+        width:50%;
+        background-color: black;
+        display: flex;
+      }
+      .footer-right-left{
+        color:white;
+        width:50%;
+        background-color: black;
+      }
+      .footer-right-right{
+        color:white;
+        width:50%;
+        background-color: black;
+      }
+      .footer-logo{
+        height:75px;
+
+      }
+      .nav-left{
+        width: 20%;
+        margin-left:20px;
+        padding-top:20px;
+    }
+    .nav-right{
+        width: 20%;
+        margin-right:20px;
+        padding-top:20px;
+    }
+    .nav-gap{
+        width: 60%;
+    }
+    .nav-logo{
+        float: left;
+        height:60px;
+    }
+    .nav-btn-icon{
+        height:60px;
+    }
+    .nav-btn{
+        float: right;
+        height:60px;
+        background-color: white;
+        border: 0;
+    }
+    .main-image-container{
+        position: relative;
+        text-align: center;
+    }
+    .main-image{
+        width:100%;
+    }
+    .main-image-logo{
+        height:60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-image-container {
+         position: relative;
+         display: inline-block;
+      }
+      .main-image-container img {
+         display: block;
+      }
+      .main-image-container .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+      }
+      .sec-one{
+        width:100%;
+        height:70px;
+        font-size:15px;
+      }
+      .sec-two{
+        width:100%;
+        text-align: justify;
+      }
+      .sec-btn-two{
+        margin:20px;
+        background-color: black;
+        border-radius: 10px;
+        height:50px;
+        width:150px;
+        border: 0;
+        color:white;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+        font-size:20px;
+      }
+      .sec-three{
+        width:100%;
+        text-align: center;
+      }
+      .three-div-one{
+
+      }
+      .profile-img{
+        width:80%;
+        border-radius:20px;
+      }
+      @media only screen and (max-width: 800px) {
+        nav{
+        width:100%;
+        height:fit-content;
+        display:flex;
+        padding-bottom:20px;
+    }
+    .nav-left{
+        width: 20%;
+        margin-left:20px;
+        padding-top:20px;
+    }
+    .nav-right{
+        width: 20%;
+        margin-right:20px;
+        padding-top:20px;
+    }
+    .nav-gap{
+        width: 60%;
+    }
+    .nav-logo{
+        float: left;
+        height:60px;
+    }
+    .nav-btn-icon{
+        height:60px;
+    }
+    .nav-btn{
+        float: right;
+        height:60px;
+        background-color: white;
+        border: 0;
+    }
+    .main-image-container{
+        position: relative;
+        text-align: center;
+    }
+    .main-image{
+        width:100%;
+    }
+    .main-image-logo{
+        height:60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-image-container {
+         position: relative;
+         display: inline-block;
+      }
+      .main-image-container img {
+         display: block;
+      }
+      .main-image-container .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+      }
+      .sec-div-one{
+        text-align: center;
+      }
+      .sec-one{
+        height:100%;
+        font-size:15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-text{
+        width:300px;
+        text-align: justify;
+        text-align-last: center;
+        font-family:"DM Sans";
+        line-height: 25px;
+      }
+      .sec-two{
+        width:100%;
+        text-align: center;
+      }
+      .sec-btn-two{
+        margin:15px;
+        background-color: black;
+        border-radius: 10px;
+        height:50px;
+        width:150px;
+        border: 0;
+        color:white;
+        font-size:20px;
+      }
+      .sec-three{
+        width:100%;
+        text-align: center;
+      }
+      .three-div-one{
+
+      }
+      .profile-img{
+        width:80%;
+        border-radius:20px;
+      }
+   
+      .footer-mobile{
+        width:100%;
+        height:350px;
+        background-color: black;
+        display: block;
+        margin-top:20px;
+      }
+      .footer-top{
+        text-align: center;
+        width:100%;
+        height:50%;
+        position: relative;
+        display: block;
+      }
+      .footer-bottom{
+        width:100%;
+        height:60%;
+        text-align: center;
+        position: relative;
+      }
+      .footer-text{
+        color:white;
+        font-family: "DM Sans";
+      }
+      .footer-desktop{
+        display:none;  
+      }
+      .footer-top .footer-logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .footer-logo{
+        height:120px;
+      }
+      .signup-email{
+        text-align: center;
+        border-radius: 10px;
+        margin:20px;
+        width:60%;
+        border: 5px solid black; 
+        height:45px;
+        font-size:20px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
+      .signup-btn{
+        margin:20px;
+        background-color: black;
+        border-radius: 10px;
+        height:50px;
+        width:100px;
+        border: 0;
+        color:white;
+        font-size:20px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
+      .dropdown{
+        background-color: white;
+        width:100%;
+        height:100%;
+        position: absolute;
+        z-index: 500;
+        display:none;
+      }
+      .menu-top{
+        height:50px;
+        margin:20px;
+      }
+      .menu-bottom{
+        display:block;
+        height:250px;
+        margin-left: 40px;
+        margin-top: 40px;
+        line-height:10px;
+        padding-top:50px;
+        width:50%;
+        margin: auto;
+      }
+      .menu-btn{
+        float: right;
+        height:60px;
+        background-color: white;
+        border: 0;
+      }
+      .menu-btn-icon{
+        height:40px;
+      }
+    }
