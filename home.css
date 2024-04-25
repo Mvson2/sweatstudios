@@ -360,4 +360,18 @@
       .phone{
         color:white;
       }
+      .sec-four{
+        margin:0 auto;
+        width:300px;
+      }
+      .send-btn{
+        background-color: black;
+        border-radius: 10px;
+        height:50px;
+        width:100px;
+        border: 0;
+        color:white;
+        font-size:20px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
     }
