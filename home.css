@@ -7,21 +7,30 @@
     font-weight: normal;
     font-style: normal;
     }
-    @media only screen and (min-width: 800px) {
     body{
-        width:100%;
-        overflow-x: hidden;
-        margin: 0;
-        font-family: "DM Sans";
-        z-index: 1;
+      width:100%;
+      overflow-x: hidden;
+      margin: 0;
+      font-family: "DM Sans";
+      z-index: 1; 
+      
+      
+      
+
+  }
+    @media only screen and (min-width: 800px) {
+    
+    .nav-item{
+      text-decoration: underline;
     }
     .phone{
         color:white;
         text-decoration: none;
       }
       .footer-desktop{
+        padding-top:100px;
         width:100%;
-        height:300px;
+        height:200px;
         background-color: black;
         display: flex;
       }
@@ -31,27 +40,61 @@
         background-color: black;
         display:block;
         text-align: center;
-        margin:20px;
       }
       .footer-right{
-        color:white;
+        height:50%;
         width:50%;
-        background-color: black;
-        display: flex;
+        margin: 0 auto;
+        display: inline-flex;
+        flex-direction: column;
+        color:white;
+        justify-content: space-around;
       }
       .footer-right-left{
         color:white;
         width:50%;
+        height:50%;
         background-color: black;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
       }
       .footer-right-right{
         color:white;
         width:50%;
         background-color: black;
       }
+      .footer-right-right-right{
+        width:50%;
+        text-align: left;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+      }
+      .footer-social{
+        height:30px;
+        width:30px;
+        
+      }
+      .footer-right-right-left{
+        width:50%;
+        text-align: left;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+      }
       .footer-logo{
-        height:75px;
-
+        height:120px;
+        margin: 0 auto;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .footer-right-left{
+      }
+      .footer-right-right{
+        height:50%;
+        display:flex;
       }
       nav{
         width:100%;
@@ -61,22 +104,22 @@
     }
       .nav-left{
         width: 20%;
-        margin-left:20px;
+        margin-left:40px;
         padding-top:20px;
     }
     .nav-right{
+    padding-top:15px;
     width:50%;
     display:flex;
-    float:right;
-    margin-top: 1%;
+    margin-right:40px;
+    justify-content: space-between;
     }
     .nav-item{
-        margin-left:50px;
         color:black;
         text-decoration: none;
     }
     .nav-gap{
-        width: 60%;
+        width: 30%;
     }
     .nav-logo{
         float: left;
@@ -127,11 +170,10 @@
       .sec-one{
         height:100%;
         width:55%;
-        font-size:15px;
         display: flex;
         justify-content: left;
         align-items: left;
-        font-size:30px;
+        font-size:25px;
       }
       .desktop-view{
         display:flex;
@@ -204,6 +246,7 @@
         margin: auto;
     
       }
+
       .menu-btn{
         float: right;
         height:60px;
@@ -215,6 +258,7 @@
       }
 
       .signup-email{
+        margin-top:25px;
         text-align: center;
         border-radius: 10px;
         width:400px;
@@ -224,6 +268,7 @@
         font-family:'Rozanova-GEO-Demo-Semi-Bold';
       }
       .signup-btn{
+        margin-top:25px;
         margin-left: 50px;
         background-color: black;
         border-radius: 10px;
@@ -272,7 +317,7 @@
       .sec-five{
         width:100%;
         text-align: left;
-        font-size: 30px;
+        font-size: 25px;
         margin-left:10%;
 
       }
@@ -283,25 +328,90 @@
         margin-left:15%;
       }
 
-      .footer-logo{
-        height:120px;
-        transform: translate(50%, 50%);
-      }
-      .footer-right-left{
-        margin-top:20%;
-      }
-      .footer-right-right{
-        transform: translate(0, 60%);
-        height:50%;
-        display:flex;
-
-      }
+    
       .nav-mobile{
         display:none;
     }
     .dropdown{
         display:none;
     }
+    .profile-container{
+      width:100%;
+      display:block;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+    .profile-container-left{
+      width:80%;
+      display:flex;
+      text-align: left;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      justify-content: space-around;
+    }
+    .profile-container-right{
+      width:80%;
+      display:flex;
+      text-align: right;
+      margin: 0 auto; 
+      margin-bottom: 50px;
+      justify-content: space-around;
+    }
+    .profile-img{
+      height: 400px; object-fit: cover;
+      width:80%;
+      border-radius:20px 50px;
+
+    }
+
+
+   .profile-desc{
+      width:20%;
+      color:black;
+      position: relative;
+      z-index: 999;
+      margin-left:10px;
+      margin-right:10px;
+   }
+   .sec-six{
+    display:flex;
+    margin:0 auto;
+    width:80%;
+    font-size:20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .sec-text-six{
+    width:100%;
+  }
+  .send-btn{
+    background-color: black;
+    border-radius: 10px;
+    height:50px;
+    width:100px;
+    border: 0;
+    color:white;
+    font-size:20px;
+    font-family:'Rozanova-GEO-Demo-Semi-Bold';
+    margin-left:50px;
+  }
+  .sec-six-left{
+    width:30%;
+    display:block;
+  }
+  .sec-six-right{
+    width:70%;
+    display:flex;
+    height:80%;
+  }
+  .div-six-msg{
+    width:50%;
+    margin-left:50px;
+  }
+  .div-six-user{
+    width:50%;
+    margin-left:50px;
+  }
 
     }
 
@@ -309,8 +419,21 @@
 
 
       @media only screen and (max-width: 600px) {
-        .profile-name{
-
+        .footer-social{
+          height:30px;
+          width:30px;
+          
+        }
+        .profile-container-right{
+          display:flex;
+          flex-direction: column;
+        }
+        .profile-container-left{
+          display:flex;
+          flex-direction: column;
+        }
+        #profile-one-one{
+          order:1;
         }
         .nav-desktop{
             display:none;
@@ -329,8 +452,6 @@
         width:100%;
         text-align: center;
         font-size: 15px;
-
-
       }
 
       .five-div-one{
@@ -338,47 +459,33 @@
         margin-bottom:30px;
       }
         .profile-container{
-            display:block;
-            margin: 0;
-            text-align: center;
+          width:80%;
+          text-align: center;
+          display:block;
+          margin: 0 auto;
+          padding-top: 15px;
           }
           .profile-img{
-            height: 400px; object-fit: cover;
-                width:100%;
-                border-radius:20px;
+            height:250px; 
+            object-fit: cover;
+                width:80%;
+                border-radius:50px 25px;
           }
-          .profile-one {
+          .profile {
             position: relative;
             display: inline-block;
+
          }
          .profile-one img {
             display: block;
          }
-         .profile-one .overlay {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            background-color: rgba(0, 0, 0, 0.8); /* black with 50% opacity */
-         }
-
          .profile-desc{
-            width:200px;
-            color:white;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%,125%);
-            color:white;
+            text-align: center;
+            color:black;
             z-index: 999;
-         }
-         .profile-btn{
-            position: fixed;
-            background-color: red;
-            border:solid transparent;
-            font-size: 30px;
-            color:white;
-            z-index: 1000;
-            filter: drop-shadow(0 0 0.75rem black);
+            width:80%;
+            margin:0 auto;
+            margin-bottom: 30px;
          }
 
         .desktop-view{
@@ -423,6 +530,7 @@
     }
     .main-image{
         width:100%;
+        border-radius: 0px 0px 50px 50px;
     }
     .main-image-logo{
         height:60px;
@@ -440,6 +548,7 @@
          display: block;
       }
       .main-image-container .overlay {
+        border-radius: 0px 0px 50px 50px;
          position: absolute;
          top: 0;
          left: 0;
@@ -489,7 +598,7 @@
    
       .footer-mobile{
         width:100%;
-        height:350px;
+        height:400px;
         background-color: black;
         display: block;
         margin-top:20px;
@@ -598,7 +707,6 @@
       }
       .menu-item:visited{
         color:black;
-        text-decoration: none;
       }
       .sec-four{
         margin:0 auto;
