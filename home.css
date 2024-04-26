@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
     }
+    @media only screen and (min-width: 800px) {
     body{
         width:100%;
         overflow-x: hidden;
@@ -14,7 +15,10 @@
         font-family: "DM Sans";
         z-index: 1;
     }
-      
+    .phone{
+        color:white;
+        text-decoration: none;
+      }
       .footer-desktop{
         width:100%;
         height:300px;
@@ -49,15 +53,27 @@
         height:75px;
 
       }
+      nav{
+        width:100%;
+        height:fit-content;
+        display:flex;
+        padding-bottom:20px;
+    }
       .nav-left{
         width: 20%;
         margin-left:20px;
         padding-top:20px;
     }
     .nav-right{
-        width: 20%;
-        margin-right:20px;
-        padding-top:20px;
+    width:50%;
+    display:flex;
+    float:right;
+    margin-top: 1%;
+    }
+    .nav-item{
+        margin-left:50px;
+        color:black;
+        text-decoration: none;
     }
     .nav-gap{
         width: 60%;
@@ -80,10 +96,11 @@
         text-align: center;
     }
     .main-image{
-        width:100%;
+        width:100vw;
+        height: 400px; object-fit: cover;
     }
     .main-image-logo{
-        height:60px;
+        height:100px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -105,38 +122,268 @@
          height: 100%;
          background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
       }
-      .sec-one{
-        width:100%;
-        height:70px;
-        font-size:15px;
+      .sec-div-one{
       }
-      .sec-two{
+      .sec-one{
+        height:100%;
+        width:55%;
+        font-size:15px;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        font-size:30px;
+      }
+      .desktop-view{
+        display:flex;
+        margin-left:10%;
+      }
+      .sec-text-one{
         width:100%;
         text-align: justify;
+        float: left;
+        font-family:"DM Sans";
+        line-height: 45px;
+
+      }
+      .sec-two{
+        width:30;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, 50%);
+      }
+      .sec-div-two{
+ 
       }
       .sec-btn-two{
-        margin:20px;
+
+
         background-color: black;
         border-radius: 10px;
-        height:50px;
-        width:150px;
+        height:81px;
+        width:225px;
         border: 0;
         color:white;
+        font-size:30px;
         font-family:'Rozanova-GEO-Demo-Semi-Bold';
-        font-size:20px;
       }
       .sec-three{
         width:100%;
-        text-align: center;
-      }
-      .three-div-one{
+        text-align: left;
+        font-size: 30px;
 
+      }
+
+      .three-div-one{
+        display:flex;
+        margin-bottom:30px;
       }
       .profile-img{
         width:80%;
         border-radius:20px;
       }
-      @media only screen and (max-width: 800px) {
+      .dropdown{
+        background-color: white;
+        width:100%;
+        height:100%;
+        position: absolute;
+        z-index: 500;
+        display:none;
+      }
+      .menu-top{
+        height:50px;
+        margin:20px;
+      }
+      .menu-bottom{
+        display:block;
+        height:250px;
+        margin-left: 40px;
+        margin-top: 40px;
+        line-height:10px;
+        padding-top:50px;
+        width:50%;
+        margin: auto;
+    
+      }
+      .menu-btn{
+        float: right;
+        height:60px;
+        background-color: white;
+        border: 0;
+      }
+      .menu-btn-icon{
+        height:40px;
+      }
+
+      .signup-email{
+        text-align: center;
+        border-radius: 10px;
+        width:400px;
+        border: 5px solid black; 
+        height:70px;
+        font-size:30px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
+      .signup-btn{
+        margin-left: 50px;
+        background-color: black;
+        border-radius: 10px;
+        height:81px;
+        width:225px;
+        border: 0;
+        color:white;
+        font-size:30px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
+      .footer-mobile{
+        display:none;
+      }
+      .footer-desktop{
+        display:flex;
+      }
+      .footer-link{
+        color:white;
+        text-decoration: none;
+      }
+      .footer-left{
+        display:flex;
+      }
+      .footer-right{
+        display:flex;
+      }
+      .three-div-one{
+        width:80%;
+      }
+      .main-text{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        font-size:50px;
+      }
+      .profile-container{
+        display:flex;
+        margin-left:10%;
+      }
+      .three-div-one{
+        margin-left:10%;
+      }
+
+      .sec-five{
+        width:100%;
+        text-align: left;
+        font-size: 30px;
+        margin-left:10%;
+
+      }
+
+      .five-div-one{
+        display:flex;
+        margin-bottom:30px;
+        margin-left:15%;
+      }
+
+      .footer-logo{
+        height:120px;
+        transform: translate(50%, 50%);
+      }
+      .footer-right-left{
+        margin-top:20%;
+      }
+      .footer-right-right{
+        transform: translate(0, 60%);
+        height:50%;
+        display:flex;
+
+      }
+      .nav-mobile{
+        display:none;
+    }
+    .dropdown{
+        display:none;
+    }
+
+    }
+
+
+
+
+      @media only screen and (max-width: 600px) {
+        .profile-name{
+
+        }
+        .nav-desktop{
+            display:none;
+        }
+        .dropdown{
+            display:flex;
+        }
+        body{
+            width:100%;
+            overflow-x: hidden;
+            margin: 0;
+            font-family: "DM Sans";
+            z-index: 1;
+        }
+      .sec-five{
+        width:100%;
+        text-align: center;
+        font-size: 15px;
+
+
+      }
+
+      .five-div-one{
+        display:block;
+        margin-bottom:30px;
+      }
+        .profile-container{
+            display:block;
+            margin: 0;
+            text-align: center;
+          }
+          .profile-img{
+            height: 400px; object-fit: cover;
+                width:100%;
+                border-radius:20px;
+          }
+          .profile-one {
+            position: relative;
+            display: inline-block;
+         }
+         .profile-one img {
+            display: block;
+         }
+         .profile-one .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* black with 50% opacity */
+         }
+
+         .profile-desc{
+            width:200px;
+            color:white;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,125%);
+            color:white;
+            z-index: 999;
+         }
+         .profile-btn{
+            position: fixed;
+            background-color: red;
+            border:solid transparent;
+            font-size: 30px;
+            color:white;
+            z-index: 1000;
+            filter: drop-shadow(0 0 0.75rem black);
+         }
+
+        .desktop-view{
+            display:block;
+          }
         nav{
         width:100%;
         height:fit-content;
@@ -152,6 +399,7 @@
         width: 20%;
         margin-right:20px;
         padding-top:20px;
+        display:block;
     }
     .nav-gap{
         width: 60%;
@@ -234,12 +482,9 @@
         width:100%;
         text-align: center;
       }
-      .three-div-one{
 
-      }
-      .profile-img{
-        width:80%;
-        border-radius:20px;
+      .three-div-one{
+        margin:0;
       }
    
       .footer-mobile{
@@ -344,25 +589,25 @@
         width:100%;
         text-align: center;
       }
-      .profile-img{
-        width:80%;
-        border-radius:20px;
-      }
+
       .sec-text-three{
         margin:40px;
       }
       a{
         text-decoration: none;
       }
-      :visited{
+      .menu-item:visited{
         color:black;
-      }
-      .phone{
-        color:white;
+        text-decoration: none;
       }
       .sec-four{
         margin:0 auto;
         width:300px;
+      }
+      .sec-six{
+        margin:0 auto;
+        width:300px;
+        font-size:20px
       }
       .send-btn{
         background-color: black;
@@ -373,5 +618,9 @@
         color:white;
         font-size:20px;
         font-family:'Rozanova-GEO-Demo-Semi-Bold';
+      }
+      .phone{
+        color:white;
+        text-decoration: none;
       }
     }

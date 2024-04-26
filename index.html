@@ -11,39 +11,50 @@
     <title>Home</title>
 </head>
 <body>
-<div id="dropdown" class="dropdown">
-  <div  class="menu-top">
-    <button class="menu-btn" type="submit" onclick="showMenu()">
-      <img class="menu-btn-icon" src="close.png" alt="buttonpng"/>
-  </button>
+  <div id="dropdown" class="dropdown">
+    <div  class="menu-top">
+      <button class="menu-btn" type="submit" onclick="showMenu()">
+        <img class="menu-btn-icon" src="close.png" alt="buttonpng"/>
+    </button>
+    </div>
+    <div class="menu-bottom">
+    <a href="about.html" class="menu-item"><h1>About Us</h1></a><br>
+    <a href="contact.html" class="menu-item"><h1>Contact</h1></a><br>
+    <a class="menu-item"><h1>Schedule</h1></a><br>
   </div>
-  <div class="menu-bottom">
-  <a href="about.html" class="nav-item"><h1>About Us</h1></a><br>
-  <a href="contact.html" class="nav-item"><h1>Contact</h1></a><br>
-  <a class="nav-item"><h1>Schedule</h1></a><br>
-</div>
-</div>
-<div>
-<nav id="body">
-        <div class="nav-left">
-            <img class="nav-logo" src="Black logo cropped - no background.png">
-        </div>
-        <div class="nav-gap"></div>
-        <div class="nav-right">
-            <button class="nav-btn" type="submit" onclick="showMenu(this)">
-                <img class="nav-btn-icon" src="navigation.png" alt="buttonpng"/>
-            </button>
-        </div>
-</nav>
+  </div>
+  <div>
+  <nav class="nav-mobile" id="body">
+          <div class="nav-left">
+              <img class="nav-logo" src="Black logo cropped - no background.png">
+          </div>
+          <div class="nav-gap"></div>
+          <div class="nav-right">
+              <button class="nav-btn" type="submit" onclick="showMenu(this)">
+                  <img class="nav-btn-icon" src="navigation.png" alt="buttonpng"/>
+              </button>
+          </div>
+  </nav>
+  <nav class="nav-desktop" id="body">
+    <div class="nav-left">
+        <img class="nav-logo" src="Black logo cropped - no background.png">
+    </div>
+    <div class="nav-gap"></div>
+    <div class="nav-right">
+        <a href="about.html" class="nav-item"><h1>About Us</h1>
+        <a href="contact.html" class="nav-item"><h1>Contact</h1>
+        <a class="nav-item"><h1>Schedule</h1></a>
+    </div>
+  </nav>
 
 <article class="main-container">
     <div class="main-image-container">
-        <img class="main-image" src="cf6673f3fc36447fd1975c3b888b9bfd.jpg">
+        <img class="main-image" src="Home.jpg">
         <div class="overlay"></div>
         <image class="main-image-logo" src="White logo text - no background.png"></image>
     </div>
 </article>
-
+<div class="desktop-view">
 <section class="sec-one">
     <div class="sec-div-one">
       <h1>Welcome!</h1>
@@ -60,9 +71,11 @@
       </a>
     </div>
 </section>
-<section class="sec-three">
-    <div class="three-div-one">
-        <h1>Sign up for our Newsletter!</h1>
+</div>
+<section class="sec-five">
+  <h1>Sign up for our Newsletter!</h1>
+    <div class="five-div-one">
+
         <input class="signup-email" type="email" placeholder="Email Address"><br>
 
         <input class="signup-btn" type="submit" value="Sign Up">
@@ -71,18 +84,31 @@
 
 <footer class="footer-desktop">
 <div class="footer-left">
-    <img class="footer-logo" src="White logo - no background.png">
-    <p class="footer-text">162 Main Street<br>
-    Sundridge, ON P0A1Z0<br>
-    (705)498-8268</p>
+
+    <div class="footer-left-left">
+      <img class="footer-logo" src="White logo - no background.png">
+
+    </div>
+
     </div>
 <div class="footer-right">
-    <div class="footer-right-left">
+  <div class="footer-right-left">
 
-    </div>
-    <div class="footer-right-right">
+    <p class="footer-text">162 Main Street<br>
+      Sundridge, ON P0A1Z0<br><br>
+      <i class="fa fa-phone"></i><a href="tel:6031112298" class="phone"> (705) 984-3474</a></p>
+  </div>
+  </div>
+  <div class="footer-right-right">
+<div class="footer-right-right-left">
+  <a href="about.html" class="footer-link">About Us</a><br><br>
+  <a href="contact.html" class="footer-link">Contact</a><br><br>
+  <a class="footer-link">Schedule</a><br>
+</div>
+<div class="footer-right-right-right">
 
-    </div>
+</div>
+  </div>
 </div>
 
 </footer>

@@ -22,38 +22,49 @@
         </button>
         </div>
         <div class="menu-bottom">
-        <a href="index.html" class="nav-item"><h1>Home</h1></a><br>
-        <a href="about.html"><h1>About Us</h1></a><br>
-        <a><h1>Schedule</h1></a><br>
+            <a href="index.html" class="menu-item"><h1>Home</h1></a><br>
+            <a href="about.html" class="menu-item"><h1>About Us</h1></a><br>
+        <a class="menu-item"><h1>Schedule</h1></a><br>
       </div>
       </div>
       <div>
-<nav id="body">
+      <nav class="nav-mobile" id="body">
+              <div class="nav-left">
+                  <img class="nav-logo" src="Black logo cropped - no background.png">
+              </div>
+              <div class="nav-gap"></div>
+              <div class="nav-right">
+                  <button class="nav-btn" type="submit" onclick="showMenu(this)">
+                      <img class="nav-btn-icon" src="navigation.png" alt="buttonpng"/>
+                  </button>
+              </div>
+      </nav>
+      <nav class="nav-desktop" id="body">
         <div class="nav-left">
             <img class="nav-logo" src="Black logo cropped - no background.png">
         </div>
         <div class="nav-gap"></div>
         <div class="nav-right">
-            <button class="nav-btn" type="submit" onclick="showMenu()">
-                <img class="nav-btn-icon" src="navigation.png" alt="buttonpng"/>
-            </button>
+            <a href="index.html" class="nav-item"><h1>Home</h1>
+            <a href="about.html" class="nav-item"><h1>About Us</h1>
+            <a class="nav-item"><h1>Schedule</h1></a>
         </div>
-</nav>
+      </nav>
 
 <article class="main-container">
     <div class="main-image-container">
-        <img class="main-image" src="IMG_0221.jpg">
+        <img class="main-image" src="Contact Us.jpg">
         <div class="overlay"></div>
         <h1 class="main-text">Contact Us</h1>
     </div>
 </article>
-<section class="sec-one">
-    <div class="sec-div-one">
-    <p class="sec-text-one">For additional information on our health and wellness solutions, please call or use the contact form below. We will be delighted to help you!</p>
+<section class="sec-six">
+    <div class="sec-div-six">
+    <p class="sec-text-six">For additional information on our health and wellness solutions, please call or use the contact form below. We will be delighted to help you!</p>
 </section>
 
-<section class="sec-four">
-    <form class="sec-four-div" action="https://formspree.io/f/xzbnywkn" method="POST">
+<section class="sec-six">
+    <form class="sec-six-div" action="https://formspree.io/f/xzbnywkn" method="POST">
         <label for="name">Name <span style="color:red;">*</span></label><br>
         <input type="text" id="name" name="fullName" required /><br><br>
 
@@ -66,32 +77,50 @@
         <button class="send-btn" type="submit">Send</button>
     </form>
 </section>
+
 <footer class="footer-desktop">
-<div class="footer-left">
-    <img class="footer-logo" src="White logo - no background.png">
-    <p class="footer-text">162 Main Street<br>
-    Sundridge, ON P0A1Z0<br>
-    (705)498-8268</p>
+    <div class="footer-left">
+    
+        <div class="footer-left-left">
+          <img class="footer-logo" src="White logo - no background.png">
+    
+        </div>
+    
+        </div>
+    <div class="footer-right">
+      <div class="footer-right-left">
+    
+        <p class="footer-text">162 Main Street<br>
+          Sundridge, ON P0A1Z0<br><br>
+          <i class="fa fa-phone"></i><a href="tel:6031112298" class="phone"> (705) 984-3474</a></p>
+      </div>
+      </div>
+      <div class="footer-right-right">
+    <div class="footer-right-right-left">
+      <a href="about.html" class="footer-link">About Us</a><br><br>
+      <a href="contact.html" class="footer-link">Contact</a><br><br>
+      <a class="footer-link">Schedule</a><br>
     </div>
-<div class="footer-right">
-    <div class="footer-right-left">
-
+    <div class="footer-right-right-right">
+    
     </div>
-    <div class="footer-right-right">
-
+      </div>
     </div>
-</div>
-
-</footer>
-<footer class="footer-mobile">
-    <div class="footer-top">
-        <img class="footer-logo" src="White logo - no background.png">
-    </div>
-    <div class="footer-bottom">
-            <p class="footer-text">162 Main Street<br>
-                Sundridge, ON P0A1Z0<br><br>
-                <i class="fa fa-phone"></i><a href="tel:6031112298" class="phone"> (705) 984-3474</a></p>
-    </div>
+    
     </footer>
-</body>
-</html>
+    <footer class="footer-mobile">
+        <div class="footer-top">
+            <img class="footer-logo" src="White logo - no background.png">
+        </div>
+        <div class="footer-bottom">
+                <p class="footer-text">162 Main Street<br>
+                    Sundridge, ON P0A1Z0<br><br>
+                    <i class="fa fa-phone"></i><a href="tel:6031112298" class="phone"> (705) 984-3474</a></p>
+        </div>
+        </footer>
+      </div>
+    </body>
+    <script src="script.js">
+    
+    </script>
+    </html>
