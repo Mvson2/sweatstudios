@@ -7,19 +7,17 @@
     font-weight: normal;
     font-style: normal;
     }
-    body{
-      width:100%;
-      overflow-x: hidden;
-      margin: 0;
-      font-family: "DM Sans";
-      z-index: 1; 
-      
-      
+
       
 
-  }
     @media only screen and (min-width: 601px) {
-    
+      body{
+        width:100%;
+        overflow-x: hidden;
+        margin: 0;
+        font-family: "DM Sans";
+        z-index: 1; 
+      }
     .nav-item{
       text-decoration: underline;
     }
@@ -359,19 +357,17 @@
     }
     .profile-img{
       height: 400px; object-fit: cover;
-      width:80%;
+      width:100px;
       border-radius:20px 50px;
 
     }
-
-
    .profile-desc{
       width:20%;
       color:black;
       position: relative;
       z-index: 999;
-      margin-left:10px;
-      margin-right:10px;
+      margin-left:5px;
+      margin-right:5px;
    }
    .sec-six{
     display:flex;
