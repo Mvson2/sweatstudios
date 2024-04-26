@@ -18,7 +18,7 @@
       
 
   }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 601px) {
     
     .nav-item{
       text-decoration: underline;
