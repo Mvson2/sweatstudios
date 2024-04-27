@@ -315,6 +315,7 @@
       }
 
       .sec-five{
+        display:none;
         width:100%;
         text-align: left;
         font-size: 25px;
@@ -323,7 +324,7 @@
       }
 
       .five-div-one{
-        display:flex;
+        display:none;
         margin-bottom:30px;
         margin-left:15%;
       }
@@ -447,13 +448,14 @@
             z-index: 1;
         }
       .sec-five{
+        display:none;
         width:100%;
         text-align: center;
         font-size: 15px;
       }
 
       .five-div-one{
-        display:block;
+        display:none;
         margin-bottom:30px;
       }
         .profile-container{
@@ -559,7 +561,7 @@
       }
       .sec-one{
         height:100%;
-        font-size:15px;
+        font-size:20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -584,6 +586,7 @@
         border: 0;
         color:white;
         font-size:20px;
+        font-family:'Rozanova-GEO-Demo-Semi-Bold';
       }
       .sec-three{
         width:100%;

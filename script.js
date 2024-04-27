@@ -6,3 +6,6 @@ function showMenu() {
       x.style.display = "none";
     }
     }
+    function show_alert() {
+      alert("xxxxxx");
+    }
