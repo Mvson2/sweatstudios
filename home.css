@@ -166,6 +166,7 @@
          border-radius: 0px 0px 50px 50px;
       }
       .sec-div-one{
+        margin-bottom:30px;
       }
       .sec-one{
         height:100%;
@@ -412,13 +413,24 @@
     width:50%;
     margin-left:50px;
   }
-
+  #mobile{
+    display:none;
+  }
+  #desktop{
+    display:block;
+  }
     }
 
 
 
 
       @media only screen and (max-width: 600px) {
+        #mobile{
+          display:block;
+        }
+        #desktop{
+          display:none;
+        }
         .footer-social{
           height:30px;
           width:30px;
@@ -432,8 +444,8 @@
           display:flex;
           flex-direction: column;
         }
-        #profile-one-one{
-          order:1;
+        .mobile-profiles{
+          display:block;
         }
         .nav-desktop{
             display:none;
@@ -574,6 +586,7 @@
       }
       .sec-text-one{
         width:300px;
+        font-size: large;
         text-align: justify;
         text-align-last: center;
         font-family:"DM Sans";
@@ -707,7 +720,7 @@
       }
 
       .sec-text-three{
-        margin:40px;
+        margin: 25px 50px 25px 50px;
       }
       a{
         text-decoration: none;
