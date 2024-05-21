@@ -360,12 +360,12 @@
     }
     .profile-img{
       height: 400px; object-fit: cover;
-      width:100%;
+      width:185px;
       border-radius:20px 50px;
 
     }
    .profile-desc{
-      width:30%;
+      width:250px;
       color:black;
       position: relative;
       z-index: 999;
