@@ -31,6 +31,7 @@
         height:200px;
         background-color: black;
         display: flex;
+        text-align:center;
       }
       .footer-left{
         color:white;
