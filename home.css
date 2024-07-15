@@ -144,7 +144,7 @@
         text-align: center;
     }
     .main-image{
-        width:100%;
+        width:70vw;
         height: 400px; object-fit: cover;
         border-radius: 0px 0px 50px 50px;
     }
@@ -167,7 +167,7 @@
          position: absolute;
          top: 0;
          left: 0;
-         width: 100%;
+         width: 70vw;
          height: 100%;
          background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
          border-radius: 0px 0px 50px 50px;
